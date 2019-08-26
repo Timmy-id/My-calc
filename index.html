@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <table id="calculator">
+            <tr>
+                <td colspan = "4"><input type="text" id="display" placeholder="0" name="display" disabled></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" class="button numbers" onclick="view('7')"></td>
+                <td><input type="button" value="8" class="button numbers" onclick="view('8')"></td>
+                <td><input type="button" value="9" class="button numbers" onclick="view('9')"></td>
+                <td><input type="button" value="+" class="button operators" onclick="view('+')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" class="button numbers" onclick="view('4')"></td>
+                <td><input type="button" value="5" class="button numbers" onclick="view('5')"></td>
+                <td><input type="button" value="6" class="button numbers" onclick="view('6')"></td>
+                <td><input type="button" value="-" class="button operators" onclick="view('-')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" class="button numbers" onclick="view('1')"></td>
+                <td><input type="button" value="2" class="button numbers" onclick="view('2')"></td>
+                <td><input type="button" value="3" class="button numbers" onclick="view('3')"></td>
+                <td><input type="button" value="x" class="button operators" onclick="view('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="c" class="button" id="clear" onclick="erase()"></td>
+                <td><input type="button" value="0" class="button numbers" onclick="view('0')"></td>
+                <td><input type="button" value="=" class="button operators" onclick="calculate()"></td>
+                <td><input type="button" value="/" class="button operators" onclick="view('/')"></td>
+            </tr>
+
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
